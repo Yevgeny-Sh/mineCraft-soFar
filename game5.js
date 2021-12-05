@@ -8,13 +8,17 @@ shovel.addEventListener(`click`, shovelClick);
 inventoryItem.addEventListener(`click`, inventoyDirtClickHandle);
 inventoryItem.addEventListener(`click`, inventoyGrassClickHandle);
 
-createSky();
-createGrassRow(16);
-createDirtRow(17);
-createDirtRow(18);
-createDirtRow(19);
-createCloudItem(10, 10);
-createCloudItem(5, 7);
+crerateInitialWorld();
+
+function crerateInitialWorld() {
+  createSky();
+  createGrassRow(16);
+  createDirtRow(17);
+  createDirtRow(18);
+  createDirtRow(19);
+  createCloudItem(10, 10);
+  createCloudItem(5, 7);
+}
 
 function createDirtElement(xAxis, yAxis) {
   let index = "x:" + xAxis + "_y:" + yAxis;
