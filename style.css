@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-size: 0.3rem;
+}
+
+.side-bar {
+  height: 20vmin;
+  width: 20vmin;
+}
+.inventory {
+  height: 5vmin;
+  width: 5vmin;
+  border: 0.25vmin solid black;
+}
+
+#game-board {
+  background-color: whitesmoke;
+  width: 100vmin;
+  height: 100vmin;
+  display: grid;
+  grid-template-rows: repeat(20, 1fr);
+  grid-template-columns: repeat(20, 1fr);
+  border: 1px solid black;
+}
+
+.dirt-item {
+  background-color: burlywood;
+  height: 5vmin;
+  width: 5vmin;
+  border: 0.25vmin solid rgb(233, 98, 98);
+}
+.grass-item {
+  background-color: green;
+  height: 5vmin;
+  width: 5vmin;
+  border: 0.25vmin solid rgb(233, 98, 98);
+}
+.stone-item {
+  background-color: gray;
+  height: 5vmin;
+  width: 5vmin;
+  border: 0.25vmin solid rgb(233, 98, 98);
+}
+.sky-item {
+  background-color: skyblue;
+  height: 5vmin;
+  width: 5vmin;
+  border: 0.25vmin solid rgb(233, 98, 98);
+}
+.cloud-item {
+  background-color: whitesmoke;
+  height: 5vmin;
+  width: 5vmin;
+  border: 0.25vmin solid rgb(233, 98, 98);
+}
+
+.shovel {
+  background-color: goldenrod;
+  height: 5vmin;
+  width: 5vmin;
+  border: 0.25vmin solid black;
+  /* font-size: 0.33rem; */
+}
